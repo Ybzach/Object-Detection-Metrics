@@ -325,7 +325,7 @@ if len(errors) != 0:
 
 # Check if path to save results already exists and is not empty
 if os.path.isdir(savePath) and os.listdir(savePath):
-    key_pressed = ''
+    key_pressed = 'Y'
     while key_pressed.upper() not in ['Y', 'N']:
         print(f'Folder {savePath} already exists and may contain important results.\n')
         print(f'Enter \'Y\' to continue. WARNING: THIS WILL REMOVE ALL THE CONTENTS OF THE FOLDER!')
