@@ -406,7 +406,7 @@ for metricsPerClass in detections:
         rec = ['%.2f' % r for r in recall]
         ap_str = "{0:.2f}%".format(ap * 100)
         # ap_str = "{0:.4f}%".format(ap * 100)
-        print('AP: %s (%s)' % (ap_str, cl))
+        # print('AP: %s (%s)' % (ap_str, cl))
         f.write('\n\nClass: %s' % cl)
         f.write('\nAP: %s' % ap_str)
         f.write('\nPrecision: %s' % prec)
@@ -414,5 +414,5 @@ for metricsPerClass in detections:
 
 mAP = acc_AP / validClasses
 mAP_str = "{0:.2f}%".format(mAP * 100)
-print('mAP: %s' % mAP_str)
+# print('mAP: %s' % mAP_str)
 f.write('\n\n\nmAP: %s' % mAP_str)
